@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<title></title> 
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURf///7e3tlEQLLcxd5+fndo9kY+PjQICAP9KrJkoYkREQHgdSikGDu9En9PT0uLi4mpqZ8c3gykpIcfHxhq6gGwAAAGxSURBVFjD7ZfdtoIgEIWRn2QUJO393/WISs2E1Iitdbpo7rD4ZDbMHhTtyRA/wFcCHBhr7Qi1ALAplKsAOGMf4SX+6aJvYo6b7l4AyHxrzfa4Ec0gHhEuRQCdb/369CqeYygAFJ2fVqAzgGh2Af06DWLqfdyLvggIuwC/vDXXngsArFsGGLSe4mDSQymFqKB3BQAW/hpCtwOQS/4tA1A4B0sG7gRAFRSYzyAPMJ4FmE+swMoTgOUc+74esBmBAagEOFxGCo5v41MtomS4AOlpMQMFTDrEmthK4lU536NHAN2gUpxKjiSpIyVP1GU7yUy1J0KoAuD2prFISCuRdYC4Eo90zACa0dpWgzcYoOet7KKYZREJwd/9IQKCPtxc4S5CBFwrurNPR6GpBIxJxVqA+nfAeEgDSOeWiii5AImKD9dmmwDdG0D899hmdwXDBkBmyfCoBe4KSFcAVI0cgMP1Pw9HPOYAttuRAeIqW04DBwA2j+SqLMDa2eyOoXEBzpfmMwHPl0zUmpgAooPBZ4INmBFq3Qva5Q8A9uM0IN7ST32xaHwzrQFMoWwHv8++rwD8ATKoawZTUZPxAAAAAElFTkSuQmCC">
+<style>
+*{margin:0;padding:0;text-decoration:none;}
+ul{list-style:none;}
+body{font-family:Droid Sans,Helvetica,Arial;text-align:center;background:#303030;}
+.swiper-preview-container{margin:10px auto;width:1000px;font-size:0}
+.swiper-preview li{width:100px;display:inline-block}
+.swiper-preview li img{width:100px;}
+.swiper-container{margin:10px auto;width:1000px;font-size:0}
+.swiper-wrapper li{width:333.33px;display:inline-block} 
+.swiper-wrapper li img{width:330px;} 
+.swiper-slide{width:100%;height:100%;}
+.swiper-slide img{width:500px;margin:auto}
+.p_color_w{color:#fff}.p_color_b{color:#000}.p_color_g{color:#04ff18}.p-l{font-size:24px;}.p-m{font-size:16px;}.p-s{font-size:13px;}
+.slidetemp,.swiper-slide{display:block;}
+
+ </style>
+</head>
+<body>
+<div class="top">
+  <div class="p-l p_color_w">How to make webp pictures</div>
+  <div class="p-s p_color_w">Demo animation</div>
+  <div class="p-s p_color_w">You can download observation</div>
+</div>
+<div class="swiper-preview-container" data-listimg='0' data-listvideo='0'>
+<ul class="swiper-preview">
+</ul>
+</div>
+<div class="swiper-container" data-listimg='0' data-listvideo='0'>
+<ul class="swiper-wrapper">
+<li><img src="images/daxiongluoli_pc.webp"><p class="p-l p_color_w">jpg</p></li>
+<li><img src="images/daxiongluoli_wap.webp"><p class="p-l p_color_w">Large size(webp)</p></li>
+<li><img src="images/daxiongluoli.jpg"><p class="p-l p_color_w">Small size(webp)</p></li>
+</ul>
+</div>
+<script type="text/javascript">
+var webps = ['sexfox', 'daxiongluoli', 'Tifa', 'tianmeiluoli', 'Sunny', 'xingyun', 'dahai', 'qingchunmeinv', 'fadayujie', 'hanfuxiaojiejie'];
+$.each(webps,function(idx,obj){
+$('.swiper-preview').append('<li><img src="images/'+obj+'_preview.jpg"></li>');
+$('.swiper-wrapper').append('<li><img src="images/'+obj+'.jpg"><p class="p-l p_color_w">jpg</p></li><li><img src="images/'+obj+'_pc.webp"><p class="p-l p_color_w">Large size(webp)</p></li><li><img src="images/'+obj+'_wap.webp"><p class="p-l p_color_w">Small size(webp)</p></li>');
+});
+
+</script>
+</body>
+</html>
